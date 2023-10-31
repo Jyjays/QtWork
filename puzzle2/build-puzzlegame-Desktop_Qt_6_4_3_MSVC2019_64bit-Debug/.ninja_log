@@ -1,0 +1,25 @@
+# ninja log v5
+19	278	7204178991834160	puzzlegame_autogen/timestamp	391222cc19267bbb
+338	1961	7200972195494492	CMakeFiles/puzzlegame.dir/main.cpp.obj	c3e7896df8c55bea
+19	278	7204178991834160	puzzlegame_autogen/mocs_compilation.cpp	391222cc19267bbb
+19	278	7204178991834160	D:/tool/QtWorkplace/puzzle2/build-puzzlegame-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/puzzlegame_autogen/timestamp	391222cc19267bbb
+491	3303	7204157090306839	CMakeFiles/puzzlegame.dir/puzzlegame_autogen/mocs_compilation.cpp.obj	e18b78c784b8b638
+19	278	7204178991834160	D:/tool/QtWorkplace/puzzle2/build-puzzlegame-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/puzzlegame_autogen/mocs_compilation.cpp	391222cc19267bbb
+230	2872	7204178409322447	CMakeFiles/puzzlegame.dir/mainwindow.cpp.obj	2157eeccc8dbdbe4
+3267	3585	7204179024117011	puzzlegame.exe	e33ae3f4dcf0bc5a
+465	546	7200981030687619	puzzlegame_autogen/EWIEGA46WW/qrc_res.cpp	92ba979ea5b3f15
+465	546	7200981030687619	D:/tool/QtWorkplace/puzzle2/build-puzzlegame-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/puzzlegame_autogen/EWIEGA46WW/qrc_res.cpp	92ba979ea5b3f15
+554	1288	7200981038117718	CMakeFiles/puzzlegame.dir/puzzlegame_autogen/EWIEGA46WW/qrc_res.cpp.obj	aa200fd1122610e8
+280	3266	7204179021664527	CMakeFiles/puzzlegame.dir/puzzlegameform.cpp.obj	987504dff21f71e
+9	212	7204181813112332	puzzlegame_autogen/timestamp	391222cc19267bbb
+9	212	7204181813112332	puzzlegame_autogen/mocs_compilation.cpp	391222cc19267bbb
+9	212	7204181813112332	D:/tool/QtWorkplace/puzzle2/build-puzzlegame-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/puzzlegame_autogen/timestamp	391222cc19267bbb
+9	212	7204181813112332	D:/tool/QtWorkplace/puzzle2/build-puzzlegame-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/puzzlegame_autogen/mocs_compilation.cpp	391222cc19267bbb
+213	2821	7204181839147066	CMakeFiles/puzzlegame.dir/puzzlegameform.cpp.obj	987504dff21f71e
+2822	3116	7204181841476896	puzzlegame.exe	e33ae3f4dcf0bc5a
+7	277	7204184521853668	puzzlegame_autogen/timestamp	391222cc19267bbb
+7	277	7204184521853668	puzzlegame_autogen/mocs_compilation.cpp	391222cc19267bbb
+7	277	7204184521853668	D:/tool/QtWorkplace/puzzle2/build-puzzlegame-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/puzzlegame_autogen/timestamp	391222cc19267bbb
+7	277	7204184521853668	D:/tool/QtWorkplace/puzzle2/build-puzzlegame-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/puzzlegame_autogen/mocs_compilation.cpp	391222cc19267bbb
+279	3467	7204184553666021	CMakeFiles/puzzlegame.dir/puzzlegameform.cpp.obj	987504dff21f71e
+3468	3812	7204184556318846	puzzlegame.exe	e33ae3f4dcf0bc5a

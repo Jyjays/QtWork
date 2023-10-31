@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-20256814f006dbd343a0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "puzzlegame",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlegame::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlegame-Debug-a1058127393c40aa7abc.json",
+					"name" : "puzzlegame",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlegame_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlegame_autogen-Debug-15014233596beb8d42aa.json",
+					"name" : "puzzlegame_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "puzzlegame_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-puzzlegame_autogen_timestamp_deps-Debug-88e6bac8d8f2c3179990.json",
+					"name" : "puzzlegame_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/tool/QtWorkplace/puzzle2/build-puzzlegame-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug",
+		"source" : "D:/tool/QtWorkplace/puzzle2/puzzlegame"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,12 @@
+# ninja log v5
+10	369	7204162964927452	PuzzleGame_autogen/timestamp	15704dc6ac124ea4
+10	369	7204162964927452	PuzzleGame_autogen/mocs_compilation.cpp	15704dc6ac124ea4
+10	369	7204162964927452	D:/tool/QtWorkplace/puzzle/build-PuzzleGame-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/PuzzleGame_autogen/mocs_compilation.cpp	15704dc6ac124ea4
+823	3535	7200965221733470	CMakeFiles/PuzzleGame.dir/main.cpp.obj	67042ac2bd85c858
+10	369	7204162964927452	D:/tool/QtWorkplace/puzzle/build-PuzzleGame-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/PuzzleGame_autogen/timestamp	15704dc6ac124ea4
+3367	3796	7204162999142609	PuzzleGame.exe	c70acc6696d5a6fb
+820	3789	7200965224248633	CMakeFiles/PuzzleGame.dir/PuzzleGame_autogen/mocs_compilation.cpp.obj	414beb580a1f99be
+372	3366	7204162994860626	CMakeFiles/PuzzleGame.dir/mainwindow.cpp.obj	e679e61b2c2f809
+365	459	7195881549927065	PuzzleGame_autogen/EWIEGA46WW/qrc_res.cpp	f14fe3a735be9b06
+365	459	7195881549927065	D:/tool/QtWorkplace/puzzle/build-PuzzleGame-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/PuzzleGame_autogen/EWIEGA46WW/qrc_res.cpp	f14fe3a735be9b06
+459	897	7195881554347713	CMakeFiles/PuzzleGame.dir/PuzzleGame_autogen/EWIEGA46WW/qrc_res.cpp.obj	d24e7a8a075249a3
