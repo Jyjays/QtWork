@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-e5b41d8dadf47a03d67c.json",
+					"jsonFile" : "directory-.-Debug-d0a1c2af1d6d100dbe9c.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TexEditor::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TexEditor-Debug-b65d23a328636f2c04fa.json",
+					"jsonFile" : "target-TexEditor-Debug-887bb21186d1c49f9acf.json",
 					"name" : "TexEditor",
 					"projectIndex" : 0
 				},

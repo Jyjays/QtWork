@@ -1,0 +1,37 @@
+{
+	"BUILD_DIR" : "D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/TexEditor_autogen",
+	"CMAKE_BINARY_DIR" : "D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/tool/QtWorkplace/MDI/TexEditor",
+	"CMAKE_SOURCE_DIR" : "D:/tool/QtWorkplace/MDI/TexEditor",
+	"INCLUDE_DIR" : "D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/TexEditor_autogen/include",
+	"INPUTS" : 
+	[
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/copy-alt.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/folder.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/scissors.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/check.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/b.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/angle-left.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/list.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/symbol.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/align-justify.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/document.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/align-left.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/angle-right.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/align-center.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/home.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/paste.png",
+		"D:/tool/QtWorkplace/MDI/TexEditor/Resourse/a.png"
+	],
+	"LOCK_FILE" : "D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/CMakeFiles/TexEditor_autogen.dir/AutoRcc_res_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "res" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_res.cpp",
+	"RCC_EXECUTABLE" : "D:/tool/Qt/6.4.3/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/CMakeFiles/TexEditor_autogen.dir/AutoRcc_res_EWIEGA46WW_Used.txt",
+	"SOURCE" : "D:/tool/QtWorkplace/MDI/TexEditor/res.qrc",
+	"VERBOSITY" : 0
+}

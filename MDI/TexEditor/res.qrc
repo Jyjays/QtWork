@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resourse/a.png</file>
+        <file>Resourse/align-center.png</file>
+        <file>Resourse/align-justify.png</file>
+        <file>Resourse/align-left.png</file>
+        <file>Resourse/angle-left.png</file>
+        <file>Resourse/angle-right.png</file>
+        <file>Resourse/check.png</file>
+        <file>Resourse/document.png</file>
+        <file>Resourse/folder.png</file>
+        <file>Resourse/home.png</file>
+        <file>Resourse/list.png</file>
+        <file>Resourse/symbol.png</file>
+        <file>Resourse/b.png</file>
+        <file>Resourse/copy-alt.png</file>
+        <file>Resourse/paste.png</file>
+        <file>Resourse/scissors.png</file>
+    </qresource>
+</RCC>
