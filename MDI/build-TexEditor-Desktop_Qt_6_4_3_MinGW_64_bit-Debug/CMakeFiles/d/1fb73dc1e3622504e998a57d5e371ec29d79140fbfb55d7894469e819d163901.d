@@ -1,4 +1,12 @@
 TexEditor_autogen/timestamp: \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QByteArray \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QFile \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QList \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QObject \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QRect \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QSize \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QSizeF \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QString \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qalgorithms.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qanystringview.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qarraydata.h \
@@ -12,6 +20,7 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qbytearraylist.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qcalendar.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qchar.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qcompare.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qcompare_impl.h \
@@ -21,8 +30,14 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qcontainertools_impl.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qcontiguouscache.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qcoreevent.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qdatetime.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qdebug.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qdir.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qfile.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qfiledevice.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qfileinfo.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qflags.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qforeach.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qgenericatomic.h \
@@ -30,11 +45,13 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qglobalstatic.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qhash.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qiodevice.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qiodevicebase.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qiterable.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qiterator.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qline.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qlist.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qlocale.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qlogging.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qmap.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qmargins.h \
@@ -42,6 +59,7 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qmetacontainer.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qmetatype.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qnamespace.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qnativeinterface.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qnumeric.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qobject.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qobject_impl.h \
@@ -49,6 +67,7 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qobjectdefs_impl.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qpair.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qpoint.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qpointer.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qprocessordetection.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qrect.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qrefcount.h \
@@ -78,39 +97,71 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qtextstream.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qtmetamacros.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qtypeinfo.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qurl.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qutf8stringview.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qvariant.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qversiontagging.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextCursor \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextDocument \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTransform \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QUndoCommand \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QUndoStack \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qabstracttextdocumentlayout.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qaction.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qbitmap.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qbrush.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qcolor.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qcursor.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qevent.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qeventpoint.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qfont.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qfontdatabase.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qfontinfo.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qfontmetrics.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qglyphrun.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qicon.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qimage.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qinputdevice.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qkeysequence.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qpaintdevice.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qpalette.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qpen.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qpixelformat.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qpixmap.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qpointingdevice.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qpolygon.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qrawfont.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qregion.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qrgb.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qrgba64.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qscreen.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextcursor.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextdocument.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextformat.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextlayout.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextoption.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtgui-config.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtguiexports.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtguiglobal.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtransform.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qundostack.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qvector2d.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qvectornd.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qwindowdefs.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/QFileDialog \
   D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/QMainWindow \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/QPlainTextEdit \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qdialog.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qfiledialog.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qframe.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qplaintextedit.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qtabwidget.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qtextedit.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -302,6 +353,7 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/c++0x_warning.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
@@ -311,6 +363,10 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_dir.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_fwd.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_ops.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_path.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
@@ -320,8 +376,11 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/max_size_type.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
@@ -334,6 +393,7 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ranges_algo.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ranges_algobase.h \
@@ -383,12 +443,14 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/codecvt \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/compare \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/concepts \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstddef \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstring \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
@@ -402,13 +464,16 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/filesystem \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/map \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
@@ -425,6 +490,7 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string_view \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/bessel_function.tcc \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/beta_function.tcc \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/ell_integral.tcc \
@@ -453,7 +519,9 @@ TexEditor_autogen/timestamp: \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdarg.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdbool.h \
   D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
@@ -499,6 +567,7 @@ TexEditor_autogen/timestamp: \
   D:/tool/QtWorkplace/MDI/TexEditor/mainwindow.cpp \
   D:/tool/QtWorkplace/MDI/TexEditor/mainwindow.h \
   D:/tool/QtWorkplace/MDI/TexEditor/res.qrc \
+  D:/tool/QtWorkplace/MDI/TexEditor/texteditcommand.h \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.24.2/CMakeCXXCompiler.cmake \
   CMakeFiles/3.24.2/CMakeRCCompiler.cmake \

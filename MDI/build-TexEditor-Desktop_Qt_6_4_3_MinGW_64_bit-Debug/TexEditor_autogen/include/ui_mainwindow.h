@@ -43,8 +43,8 @@ public:
     QToolButton *toolButton_2;
     QToolButton *toolButton_14;
     QToolButton *toolButton;
-    QPlainTextEdit *plainTextEdit;
     QFontComboBox *fontComboBox;
+    QPlainTextEdit *plainTextEdit;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -213,9 +213,6 @@ public:
 
         gridLayout->addWidget(toolButton, 0, 0, 2, 1);
 
-        plainTextEdit = new QPlainTextEdit(centralwidget);
-        plainTextEdit->setObjectName("plainTextEdit");
-        plainTextEdit->setGeometry(QRect(0, 80, 791, 481));
         fontComboBox = new QFontComboBox(centralwidget);
         fontComboBox->setObjectName("fontComboBox");
         fontComboBox->setGeometry(QRect(0, 50, 228, 24));
@@ -224,6 +221,15 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(fontComboBox->sizePolicy().hasHeightForWidth());
         fontComboBox->setSizePolicy(sizePolicy1);
+        plainTextEdit = new QPlainTextEdit(centralwidget);
+        plainTextEdit->setObjectName("plainTextEdit");
+        plainTextEdit->setGeometry(QRect(0, 80, 791, 511));
+        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(plainTextEdit->sizePolicy().hasHeightForWidth());
+        plainTextEdit->setSizePolicy(sizePolicy2);
+        plainTextEdit->setAutoFillBackground(true);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
