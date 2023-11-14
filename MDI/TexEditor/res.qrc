@@ -16,5 +16,6 @@
         <file>Resourse/copy-alt.png</file>
         <file>Resourse/paste.png</file>
         <file>Resourse/scissors.png</file>
+        <file>Resourse/intro.txt</file>
     </qresource>
 </RCC>

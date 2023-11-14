@@ -4,8 +4,10 @@ D:/tool/QtWorkplace/MDI/TexEditor/mainwindow.h
  mdp:D:/tool/QtWorkplace/MDI/TexEditor/mainwindow.h
  mdp:D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/TexEditor_autogen/moc_predefs.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QByteArray
+ mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QDir
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QFile
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QList
+ mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QMap
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QObject
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QRect
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QSize
@@ -106,6 +108,7 @@ D:/tool/QtWorkplace/MDI/TexEditor/mainwindow.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qvariant.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qvarlengtharray.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qversiontagging.h
+ mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextCharFormat
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextCursor
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextDocument
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTransform
@@ -157,6 +160,7 @@ D:/tool/QtWorkplace/MDI/TexEditor/mainwindow.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/QFileDialog
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/QMainWindow
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/QPlainTextEdit
+ mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/QTabWidget
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qabstractscrollarea.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qdialog.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtWidgets/qfiledialog.h
