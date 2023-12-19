@@ -13,7 +13,9 @@
 #include <QDir>
 #include <QMap>
 #include <QTextCharFormat>
-
+#include <QTextCursor>
+#include <QTextDocument>
+#include <QTextBlock>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -49,6 +51,24 @@ private slots:
 
     void on_toolButton_7_clicked();
 
+    void on_toolButton_8_clicked();
+
+    void on_toolButton_9_clicked();
+
+    void on_toolButton_10_clicked();
+
+    void on_toolButton_11_clicked();
+
+    void on_toolButton_13_clicked();
+
+    void on_toolButton_12_clicked();
+
+    void on_toolButton_15_clicked();
+
+    void on_toolButton_16_clicked();
+
+    void on_comboBox_currentIndexChanged(int index);
+
 private:
     Ui::MainWindow *ui;
     QString currentPath;
@@ -58,10 +78,11 @@ private:
 
     QMap<int,QString> id_path_map;
     int pageCount;
-    QPlainTextEdit* currentPlainTextEdit;
+    QTextEdit* currentPlainTextEdit;
     QTabWidget* tabWidget;
 
     void setDefultPage();
     void getTab(QString str);
+
 };
 #endif // MAINWINDOW_H

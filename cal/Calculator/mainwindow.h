@@ -4,7 +4,12 @@
 #include <QMainWindow>
 #include "form.h"
 #include "ui_form.h"
+#include <cmath>
+
+
 QT_BEGIN_NAMESPACE
+
+
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
@@ -21,7 +26,6 @@ private slots:
     void fuHao();
     void _move();
     void _delete();
-
     void on_formButton_clicked();
 
 private:

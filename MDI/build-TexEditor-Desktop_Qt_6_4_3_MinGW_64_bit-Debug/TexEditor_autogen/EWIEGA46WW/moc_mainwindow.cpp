@@ -27,7 +27,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MainWindow_t {
-    uint offsetsAndSizes[28];
+    uint offsetsAndSizes[46];
     char stringdata0[11];
     char stringdata1[22];
     char stringdata2[1];
@@ -42,6 +42,15 @@ struct qt_meta_stringdata_MainWindow_t {
     char stringdata11[31];
     char stringdata12[24];
     char stringdata13[24];
+    char stringdata14[24];
+    char stringdata15[24];
+    char stringdata16[25];
+    char stringdata17[25];
+    char stringdata18[25];
+    char stringdata19[25];
+    char stringdata20[25];
+    char stringdata21[25];
+    char stringdata22[32];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
@@ -60,7 +69,16 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
         QT_MOC_LITERAL(196, 5),  // "index"
         QT_MOC_LITERAL(202, 30),  // "on_tabWidget_tabCloseRequested"
         QT_MOC_LITERAL(233, 23),  // "on_toolButton_5_clicked"
-        QT_MOC_LITERAL(257, 23)   // "on_toolButton_7_clicked"
+        QT_MOC_LITERAL(257, 23),  // "on_toolButton_7_clicked"
+        QT_MOC_LITERAL(281, 23),  // "on_toolButton_8_clicked"
+        QT_MOC_LITERAL(305, 23),  // "on_toolButton_9_clicked"
+        QT_MOC_LITERAL(329, 24),  // "on_toolButton_10_clicked"
+        QT_MOC_LITERAL(354, 24),  // "on_toolButton_11_clicked"
+        QT_MOC_LITERAL(379, 24),  // "on_toolButton_13_clicked"
+        QT_MOC_LITERAL(404, 24),  // "on_toolButton_12_clicked"
+        QT_MOC_LITERAL(429, 24),  // "on_toolButton_15_clicked"
+        QT_MOC_LITERAL(454, 24),  // "on_toolButton_16_clicked"
+        QT_MOC_LITERAL(479, 31)   // "on_comboBox_currentIndexChanged"
     },
     "MainWindow",
     "on_toolButton_clicked",
@@ -75,7 +93,16 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
     "index",
     "on_tabWidget_tabCloseRequested",
     "on_toolButton_5_clicked",
-    "on_toolButton_7_clicked"
+    "on_toolButton_7_clicked",
+    "on_toolButton_8_clicked",
+    "on_toolButton_9_clicked",
+    "on_toolButton_10_clicked",
+    "on_toolButton_11_clicked",
+    "on_toolButton_13_clicked",
+    "on_toolButton_12_clicked",
+    "on_toolButton_15_clicked",
+    "on_toolButton_16_clicked",
+    "on_comboBox_currentIndexChanged"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -86,7 +113,7 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-      10,   14, // methods
+      19,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -94,16 +121,25 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   74,    2, 0x08,    1 /* Private */,
-       3,    0,   75,    2, 0x08,    2 /* Private */,
-       4,    0,   76,    2, 0x08,    3 /* Private */,
-       5,    0,   77,    2, 0x08,    4 /* Private */,
-       6,    0,   78,    2, 0x08,    5 /* Private */,
-       7,    1,   79,    2, 0x08,    6 /* Private */,
-       9,    1,   82,    2, 0x08,    8 /* Private */,
-      11,    1,   85,    2, 0x08,   10 /* Private */,
-      12,    0,   88,    2, 0x08,   12 /* Private */,
-      13,    0,   89,    2, 0x08,   13 /* Private */,
+       1,    0,  128,    2, 0x08,    1 /* Private */,
+       3,    0,  129,    2, 0x08,    2 /* Private */,
+       4,    0,  130,    2, 0x08,    3 /* Private */,
+       5,    0,  131,    2, 0x08,    4 /* Private */,
+       6,    0,  132,    2, 0x08,    5 /* Private */,
+       7,    1,  133,    2, 0x08,    6 /* Private */,
+       9,    1,  136,    2, 0x08,    8 /* Private */,
+      11,    1,  139,    2, 0x08,   10 /* Private */,
+      12,    0,  142,    2, 0x08,   12 /* Private */,
+      13,    0,  143,    2, 0x08,   13 /* Private */,
+      14,    0,  144,    2, 0x08,   14 /* Private */,
+      15,    0,  145,    2, 0x08,   15 /* Private */,
+      16,    0,  146,    2, 0x08,   16 /* Private */,
+      17,    0,  147,    2, 0x08,   17 /* Private */,
+      18,    0,  148,    2, 0x08,   18 /* Private */,
+      19,    0,  149,    2, 0x08,   19 /* Private */,
+      20,    0,  150,    2, 0x08,   20 /* Private */,
+      21,    0,  151,    2, 0x08,   21 /* Private */,
+      22,    1,  152,    2, 0x08,   22 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -116,6 +152,15 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void, QMetaType::Int,   10,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   10,
 
        0        // eod
 };
@@ -151,7 +196,26 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'on_toolButton_5_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_toolButton_7_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_toolButton_8_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_toolButton_9_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_toolButton_10_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_toolButton_11_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_toolButton_13_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_toolButton_12_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_toolButton_15_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_toolButton_16_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_comboBox_currentIndexChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
@@ -172,6 +236,15 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 7: _t->on_tabWidget_tabCloseRequested((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 8: _t->on_toolButton_5_clicked(); break;
         case 9: _t->on_toolButton_7_clicked(); break;
+        case 10: _t->on_toolButton_8_clicked(); break;
+        case 11: _t->on_toolButton_9_clicked(); break;
+        case 12: _t->on_toolButton_10_clicked(); break;
+        case 13: _t->on_toolButton_11_clicked(); break;
+        case 14: _t->on_toolButton_13_clicked(); break;
+        case 15: _t->on_toolButton_12_clicked(); break;
+        case 16: _t->on_toolButton_15_clicked(); break;
+        case 17: _t->on_toolButton_16_clicked(); break;
+        case 18: _t->on_comboBox_currentIndexChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     }
@@ -196,13 +269,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 10)
+        if (_id < 19)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 10;
+        _id -= 19;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 10)
+        if (_id < 19)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 10;
+        _id -= 19;
     }
     return _id;
 }

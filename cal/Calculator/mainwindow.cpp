@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     this->setWindowTitle("简易计算器");
     ui->plainTextEdit->setPlainText("");
     _text = ui->plainTextEdit->toPlainText();
@@ -51,7 +52,14 @@ void MainWindow::connectButton() {
     connect(ui->left,&QToolButton::clicked,this,&MainWindow::_move);
     connect(ui->del,&QToolButton::clicked,this,&MainWindow::_delete);
     connect(ui->ac,&QToolButton::clicked,this,&MainWindow::_delete);
-
+    connect(ui->right_kuo,&QToolButton::clicked,this,&MainWindow::fuHao);
+    connect(ui->left_kuo,&QToolButton::clicked,this,&MainWindow::fuHao);
+    connect(ui->sin,&QToolButton::clicked,this,&MainWindow::fuHao);
+    connect(ui->cos,&QToolButton::clicked,this,&MainWindow::fuHao);
+    connect(ui->pow,&QToolButton::clicked,this,&MainWindow::fuHao);
+    connect(ui->sin1,&QToolButton::clicked,this,&MainWindow::fuHao);
+    connect(ui->cos1,&QToolButton::clicked,this,&MainWindow::fuHao);
+    connect(ui->tan1,&QToolButton::clicked,this,&MainWindow::fuHao);
 }
 
 void MainWindow::numOnClick(){
@@ -184,9 +192,8 @@ bool Calculator::_equal() {
 
 }
 bool Calculator::hasHigherPrecedence(QChar op1, QChar op2) {
-    return (op1 == '*' || op1 == '/') && (op2 == '+' || op2 == '-');
+    return (op1 == '^') && (op2 == '+' || op2 == '-' || op2 == '*' || op2 == '/');
 }
-
 void Calculator::processOperator(std::stack<QChar>& operators, std::stack<double>& values) {
     QChar Op = operators.top();
     char op = Op.toLatin1();
@@ -230,4 +237,5 @@ void MainWindow::on_formButton_clicked()
     Form *transForm = new Form;
     transForm->show();
 }
+
 

@@ -13,6 +13,7 @@ D:/tool/QtWorkplace/MDI/TexEditor/mainwindow.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QSize
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QSizeF
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QString
+ mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/Qt
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qalgorithms.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qanystringview.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qarraydata.h
@@ -108,6 +109,7 @@ D:/tool/QtWorkplace/MDI/TexEditor/mainwindow.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qvariant.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qvarlengtharray.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qversiontagging.h
+ mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextBlock
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextCharFormat
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextCursor
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextDocument
@@ -147,6 +149,7 @@ D:/tool/QtWorkplace/MDI/TexEditor/mainwindow.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextdocument.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextformat.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextlayout.h
+ mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextobject.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextoption.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtgui-config.h
  mdp:D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtguiexports.h

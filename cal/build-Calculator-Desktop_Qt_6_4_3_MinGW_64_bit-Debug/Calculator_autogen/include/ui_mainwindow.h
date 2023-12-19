@@ -58,6 +58,18 @@ public:
     QToolButton *del;
     QToolButton *ac;
     QPushButton *formButton;
+    QWidget *horizontalLayoutWidget_2;
+    QHBoxLayout *horizontalLayout_2;
+    QToolButton *right_kuo;
+    QToolButton *left_kuo;
+    QToolButton *pow;
+    QToolButton *sin;
+    QWidget *horizontalLayoutWidget_3;
+    QHBoxLayout *horizontalLayout_3;
+    QToolButton *cos;
+    QToolButton *sin1;
+    QToolButton *cos1;
+    QToolButton *tan1;
     QMenuBar *menubar;
     QMenu *menu;
     QStatusBar *statusbar;
@@ -66,14 +78,14 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(380, 450);
-        MainWindow->setMinimumSize(QSize(380, 450));
-        MainWindow->setMaximumSize(QSize(380, 450));
+        MainWindow->resize(380, 500);
+        MainWindow->setMinimumSize(QSize(380, 500));
+        MainWindow->setMaximumSize(QSize(380, 500));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         gridLayoutWidget = new QWidget(centralwidget);
         gridLayoutWidget->setObjectName("gridLayoutWidget");
-        gridLayoutWidget->setGeometry(QRect(10, 150, 264, 254));
+        gridLayoutWidget->setGeometry(QRect(10, 250, 264, 201));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName("gridLayout");
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -163,7 +175,7 @@ public:
 
         verticalLayoutWidget = new QWidget(centralwidget);
         verticalLayoutWidget->setObjectName("verticalLayoutWidget");
-        verticalLayoutWidget->setGeometry(QRect(280, 160, 91, 231));
+        verticalLayoutWidget->setGeometry(QRect(280, 250, 91, 211));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -196,7 +208,7 @@ public:
         plainTextEdit->setGeometry(QRect(20, 10, 271, 51));
         horizontalLayoutWidget = new QWidget(centralwidget);
         horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
-        horizontalLayoutWidget->setGeometry(QRect(9, 99, 361, 51));
+        horizontalLayoutWidget->setGeometry(QRect(10, 100, 361, 51));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -229,6 +241,66 @@ public:
         formButton->setGeometry(QRect(290, 70, 80, 24));
         formButton->setAutoRepeat(false);
         formButton->setAutoExclusive(false);
+        horizontalLayoutWidget_2 = new QWidget(centralwidget);
+        horizontalLayoutWidget_2->setObjectName("horizontalLayoutWidget_2");
+        horizontalLayoutWidget_2->setGeometry(QRect(10, 150, 361, 51));
+        horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget_2);
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        right_kuo = new QToolButton(horizontalLayoutWidget_2);
+        right_kuo->setObjectName("right_kuo");
+        right_kuo->setMaximumSize(QSize(90, 40));
+
+        horizontalLayout_2->addWidget(right_kuo);
+
+        left_kuo = new QToolButton(horizontalLayoutWidget_2);
+        left_kuo->setObjectName("left_kuo");
+        left_kuo->setMaximumSize(QSize(90, 40));
+
+        horizontalLayout_2->addWidget(left_kuo);
+
+        pow = new QToolButton(horizontalLayoutWidget_2);
+        pow->setObjectName("pow");
+        pow->setMaximumSize(QSize(90, 40));
+
+        horizontalLayout_2->addWidget(pow);
+
+        sin = new QToolButton(horizontalLayoutWidget_2);
+        sin->setObjectName("sin");
+        sin->setMaximumSize(QSize(90, 40));
+
+        horizontalLayout_2->addWidget(sin);
+
+        horizontalLayoutWidget_3 = new QWidget(centralwidget);
+        horizontalLayoutWidget_3->setObjectName("horizontalLayoutWidget_3");
+        horizontalLayoutWidget_3->setGeometry(QRect(10, 200, 361, 51));
+        horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget_3);
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        cos = new QToolButton(horizontalLayoutWidget_3);
+        cos->setObjectName("cos");
+        cos->setMaximumSize(QSize(90, 40));
+
+        horizontalLayout_3->addWidget(cos);
+
+        sin1 = new QToolButton(horizontalLayoutWidget_3);
+        sin1->setObjectName("sin1");
+        sin1->setMaximumSize(QSize(90, 40));
+
+        horizontalLayout_3->addWidget(sin1);
+
+        cos1 = new QToolButton(horizontalLayoutWidget_3);
+        cos1->setObjectName("cos1");
+        cos1->setMaximumSize(QSize(90, 40));
+
+        horizontalLayout_3->addWidget(cos1);
+
+        tan1 = new QToolButton(horizontalLayoutWidget_3);
+        tan1->setObjectName("tan1");
+        tan1->setMaximumSize(QSize(90, 40));
+
+        horizontalLayout_3->addWidget(tan1);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -271,6 +343,14 @@ public:
         del->setText(QCoreApplication::translate("MainWindow", "DEL", nullptr));
         ac->setText(QCoreApplication::translate("MainWindow", "AC", nullptr));
         formButton->setText(QCoreApplication::translate("MainWindow", "\350\277\233\345\210\266\350\275\254\346\215\242", nullptr));
+        right_kuo->setText(QCoreApplication::translate("MainWindow", "(", nullptr));
+        left_kuo->setText(QCoreApplication::translate("MainWindow", ")", nullptr));
+        pow->setText(QCoreApplication::translate("MainWindow", "^", nullptr));
+        sin->setText(QCoreApplication::translate("MainWindow", "sin", nullptr));
+        cos->setText(QCoreApplication::translate("MainWindow", "cos", nullptr));
+        sin1->setText(QCoreApplication::translate("MainWindow", "sin^-1", nullptr));
+        cos1->setText(QCoreApplication::translate("MainWindow", "cos^-1", nullptr));
+        tan1->setText(QCoreApplication::translate("MainWindow", "tan^-1", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\347\256\200\346\230\223\350\256\241\347\256\227\345\231\250", nullptr));
     } // retranslateUi
 

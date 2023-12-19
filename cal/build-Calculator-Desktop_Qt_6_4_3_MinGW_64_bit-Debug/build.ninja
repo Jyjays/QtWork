@@ -192,7 +192,7 @@ build Calculator_autogen/timestamp Calculator_autogen/mocs_compilation.cpp | ${c
 #############################################
 # Phony custom command for CMakeFiles\Calculator_autogen_timestamp_deps
 
-build CMakeFiles/Calculator_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Calculator_autogen_timestamp_deps: phony D$:/tool/Qt/6.4.3/mingw_64/lib/libQt6Core.a D$:/tool/Qt/6.4.3/mingw_64/./bin/uic.exe D$:/tool/Qt/6.4.3/mingw_64/./bin/moc.exe D$:/tool/Qt/6.4.3/mingw_64/lib/libQt6Widgets.a
+build CMakeFiles/Calculator_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Calculator_autogen_timestamp_deps: phony D$:/tool/Qt/6.4.3/mingw_64/lib/libQt6Core.a D$:/tool/Qt/6.4.3/mingw_64/./bin/moc.exe D$:/tool/Qt/6.4.3/mingw_64/./bin/uic.exe D$:/tool/Qt/6.4.3/mingw_64/lib/libQt6Widgets.a
 
 
 #############################################

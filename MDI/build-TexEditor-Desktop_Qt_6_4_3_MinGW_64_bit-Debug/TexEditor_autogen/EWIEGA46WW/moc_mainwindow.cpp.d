@@ -10,6 +10,7 @@ D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/TexE
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QSize \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QSizeF \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/QString \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtCore/Qt \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qalgorithms.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qanystringview.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qarraydata.h \
@@ -105,6 +106,7 @@ D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/TexE
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qvariant.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtCore/qversiontagging.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextBlock \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextCharFormat \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextCursor \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/QTextDocument \
@@ -144,6 +146,7 @@ D:/tool/QtWorkplace/MDI/build-TexEditor-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/TexE
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextdocument.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextformat.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextlayout.h \
+  D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextobject.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtextoption.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtgui-config.h \
   D:/tool/Qt/6.4.3/mingw_64/include/QtGui/qtguiexports.h \

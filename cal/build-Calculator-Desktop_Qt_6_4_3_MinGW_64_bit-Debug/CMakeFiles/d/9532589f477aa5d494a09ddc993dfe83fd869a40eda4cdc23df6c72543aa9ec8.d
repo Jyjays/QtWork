@@ -513,6 +513,7 @@ Calculator_autogen/timestamp: \
   D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
   D:/tool/QtWorkplace/cal/Calculator/CMakeLists.txt \
   D:/tool/QtWorkplace/cal/Calculator/calculator.h \
+  D:/tool/QtWorkplace/cal/Calculator/exprtk.hpp \
   D:/tool/QtWorkplace/cal/Calculator/form.cpp \
   D:/tool/QtWorkplace/cal/Calculator/form.h \
   D:/tool/QtWorkplace/cal/Calculator/main.cpp \

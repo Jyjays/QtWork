@@ -9,6 +9,16 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+#set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build shared libraries")
+#set(ENABLE_SAMPLES OFF CACHE BOOL "Enable muParser samples")
+#set(ENABLE_OPENMP OFF CACHE BOOL "Enable OpenMP support")
+#set(ENABLE_WIDE_CHAR OFF CACHE BOOL "Enable wide character support")
+
+#add_subdirectory(muParser)
+
+## 添加 muParser 子目录
+#add_subdirectory(muparser)
+
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
@@ -25,12 +35,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         calculator.h
         form.h form.cpp form.ui
-
-
+        exprtk.hpp
 
 
     )
-# Define target properties for Android with Qt 6 as:
+# D
 #    set_property(TARGET Calculator APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
@@ -48,7 +57,9 @@ else()
     endif()
 endif()
 
+
 target_link_libraries(Calculator PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
@@ -74,3 +85,6 @@ install(TARGETS Calculator
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(Calculator)
 endif()
+
+
+

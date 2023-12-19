@@ -44,10 +44,29 @@ void MainWindow::setDefultPage(){
     getTab(str);
 }
 
+
+
+void MainWindow::getTab(QString str) {
+    QTextEdit* page = new QTextEdit(this);
+    // 使用 setHtml 函数显示HTML内容
+    page->setHtml(str);
+
+    // 使用 section 函数提取文件名
+    QString fileName = currentPath.section('/', -1);
+
+    ui->tabWidget->addTab(page, fileName);
+    pageCount = ui->tabWidget->count();
+    qDebug() << "pagecount:" << pageCount;
+    id_path_map.insert(pageCount - 1, currentPath);
+    qDebug() << id_path_map[pageCount - 1];
+    ui->tabWidget->setCurrentIndex(pageCount - 1);
+}
+
+
 //打开文件
 void MainWindow::on_toolButton_clicked()
 {
-    QString fileName = QFileDialog::getOpenFileName(this, "打开文件", ".", "Text Files (*.txt);;C/C++ Files (*.c *.cpp)");
+    QString fileName = QFileDialog::getOpenFileName(this, "打开文件", ".", "Text Files (*.txt);;C/C++ Files (*.c *.cpp);;HTML Files (*.html)");
     //qDebug()<<fileName;
     if (fileName.isEmpty())
     {
@@ -68,21 +87,30 @@ void MainWindow::on_toolButton_clicked()
 
     getTab(str);
 }
+//打开文件
+//void MainWindow::on_toolButton_clicked()
+//{
+//    QString fileName = QFileDialog::getOpenFileName(this, "打开文件", ".", "Text Files (*.txt);;C/C++ Files (*.c *.cpp);;HTML Files (*.html)");
+//    //qDebug()<<fileName;
+//    if (fileName.isEmpty())
+//    {
+//        ui->statusbar->showMessage("打开文件失败");
+//        return;
+//    }
+//    currentPath = fileName;
+//    //打开文件
+//    QFile file(fileName);
+//    bool ret = file.open(QIODevice::ReadOnly);
+//    if(!ret){
+//        ui->statusbar->showMessage("打开文件失败");
+//        return;
+//    }
+//    //读取文件内容
+//    QByteArray buf = file.readAll();
+//    QString str = QString::fromUtf8(buf);
 
-void MainWindow::getTab(QString str){
-    QPlainTextEdit* page = new QPlainTextEdit(this);
-    page->setPlainText(str);  // 设置 QPlainTextEdit 的文本内容
-
-    // 使用 section 函数提取文件名
-    QString fileName = currentPath.section('/', -1);
-
-    ui->tabWidget->addTab(page, fileName);
-    pageCount = ui->tabWidget->count();
-    qDebug()<<"pagecount:"<<pageCount;
-    id_path_map.insert(pageCount-1,currentPath);
-    qDebug()<<id_path_map[pageCount-1];
-    ui->tabWidget->setCurrentIndex(pageCount-1);
-}
+//    getTab(str);
+//}
 
 //保存文件
 void MainWindow::on_toolButton_14_clicked()
@@ -100,7 +128,7 @@ void MainWindow::on_toolButton_14_clicked()
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
     {
         QTextStream out(&file);
-        out << currentPlainTextEdit->toPlainText();
+        out <<currentPlainTextEdit->toHtml();
         file.close();
         ui->statusbar->showMessage("文件已保存");
     }
@@ -109,31 +137,34 @@ void MainWindow::on_toolButton_14_clicked()
         ui->statusbar->showMessage("保存文件失败");
     }
 }
-
-//另存文件
+// 另存文件
 void MainWindow::on_toolButton_2_clicked()
 {
-    QString fileName = QFileDialog::getSaveFileName(this, "另存文件", ".", "Text Files (*.txt);;C/C++ Files (*.c *.cpp)");
-    if(fileName.isEmpty()){
+    QString fileName = QFileDialog::getSaveFileName(this, "另存文件", ".", "HTML Files (*.html);;Text Files (*.txt);;C/C++ Files (*.c *.cpp)");
+    if (fileName.isEmpty())
+    {
         ui->statusbar->showMessage("保存失败");
         return;
     }
+
     QFile file(fileName);
-    bool ret = file.open(QIODevice::ReadWrite | QIODevice::Truncate);
-    if(!ret){
-        ui->statusbar->showMessage("打开文件失败");
+    bool ret = file.open(QIODevice::WriteOnly | QIODevice::Text);
+    if (!ret)
+    {
+        ui->statusbar->showMessage("保存文件失败");
         return;
     }
-    //写入（编码）
-    QString str = currentPlainTextEdit->toPlainText();
 
-    //把Qsting类型的str写入文件中
-    //QByteArray buf = str.toUtf8();
-    QByteArray buf = str.toLocal8Bit();
-    file.write(buf);
-    ui->statusbar->showMessage("保存成功",2000);
+    // 使用toHtml函数获取HTML内容
+    QString str = currentPlainTextEdit->toHtml();
+
+    // 将HTML写入文件
+    QTextStream out(&file);
+    out << str;
+
+    file.close();
+    ui->statusbar->showMessage("保存成功", 2000);
 }
-
 // 撤回操作
 void MainWindow::on_toolButton_3_clicked()
 {
@@ -163,6 +194,13 @@ void MainWindow::on_fontComboBox_currentFontChanged(const QFont &f)
 //    currentPlainTextEdit->mergeCurrentCharFormat(charFormat);
 }
 
+//改变字号
+void MainWindow::on_comboBox_currentIndexChanged(int index)
+{
+    charFormat = currentPlainTextEdit->currentCharFormat();
+    charFormat.setFontPointSize(index);
+    currentPlainTextEdit->mergeCurrentCharFormat(charFormat);
+}
 
 
 
@@ -175,7 +213,7 @@ void MainWindow::on_tabWidget_currentChanged(int index)
     QWidget* currentWidget = ui->tabWidget->currentWidget();
     qDebug()<<"pageid:"<<currentPageId;
     // 使用 qobject_cast 进行类型转换，确保是 QPlainTextEdit 类型
-    currentPlainTextEdit = qobject_cast<QPlainTextEdit*>(currentWidget);
+    currentPlainTextEdit = qobject_cast<QTextEdit*>(currentWidget);
 }
 
 //关闭标签页
@@ -203,20 +241,65 @@ void MainWindow::on_toolButton_5_clicked()
 //对齐方式
 void MainWindow::on_toolButton_7_clicked()
 {
-    QTextCursor cursor = currentPlainTextEdit->textCursor();
-    QTextBlockFormat blockFormat = cursor.blockFormat();
-
-    currentAlignment = blockFormat.alignment();
-
-    if(currentAlignment){
-        qDebug()<<"左对齐";
-        //QTextEdit *edit = new QTextEdit(this);
-
-        blockFormat.setAlignment(Qt::AlignLeft);
-    }
-
-
-    cursor.setBlockFormat(blockFormat);
-    currentPlainTextEdit->mergeCurrentCharFormat(cursor.charFormat());
+    currentPlainTextEdit->setAlignment(Qt::AlignLeft);
 }
+
+
+void MainWindow::on_toolButton_8_clicked()
+{
+    currentPlainTextEdit->setAlignment(Qt::AlignCenter);
+}
+
+
+void MainWindow::on_toolButton_9_clicked()
+{
+    currentPlainTextEdit->setAlignment(Qt::AlignRight);
+}
+
+
+void MainWindow::on_toolButton_10_clicked()
+{
+    currentPlainTextEdit->setAlignment(Qt::AlignJustify);
+}
+
+
+void MainWindow::on_toolButton_11_clicked()
+{
+    currentPlainTextEdit->copy();
+}
+
+
+void MainWindow::on_toolButton_13_clicked()
+{
+    currentPlainTextEdit->cut();
+}
+
+
+void MainWindow::on_toolButton_12_clicked()
+{
+    currentPlainTextEdit->paste();
+}
+
+//斜体
+void MainWindow::on_toolButton_15_clicked()
+{
+    charFormat = currentPlainTextEdit->currentCharFormat();
+    charFormat.setFontItalic(charFormat.fontItalic()? false:true);
+    // 应用字符格式
+    currentPlainTextEdit->mergeCurrentCharFormat(charFormat);
+
+}
+
+
+void MainWindow::on_toolButton_16_clicked()
+{
+    charFormat = currentPlainTextEdit->currentCharFormat();
+
+    charFormat.setFontUnderline(charFormat.fontUnderline()? false:true);
+    // 应用字符格式
+    currentPlainTextEdit->mergeCurrentCharFormat(charFormat);
+}
+
+
+
 

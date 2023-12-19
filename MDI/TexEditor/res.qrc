@@ -17,5 +17,7 @@
         <file>Resourse/paste.png</file>
         <file>Resourse/scissors.png</file>
         <file>Resourse/intro.txt</file>
+        <file>Resourse/italic.png</file>
+        <file>Resourse/underline.png</file>
     </qresource>
 </RCC>

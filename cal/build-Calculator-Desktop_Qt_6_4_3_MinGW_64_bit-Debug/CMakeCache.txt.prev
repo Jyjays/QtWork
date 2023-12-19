@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Build shared/static libs
+BUILD_SHARED_LIBS:BOOL=ON
+
+//Build the testing tree.
+BUILD_TESTING:BOOL=ON
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/bin/addr2line.exe
 
@@ -55,8 +61,34 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/bin/gcc.exe
+//C compiler
+CMAKE_C_COMPILER:STRING=D:/tool/Qt/Tools/mingw1120_64/bin/gcc.exe
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/bin/gcc-ar.exe
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/bin/gcc-ranlib.exe
+
+//Flags used by the C compiler during all build types.
+CMAKE_C_FLAGS:STRING=
+
+//Flags used by the C compiler during DEBUG builds.
+CMAKE_C_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the C compiler during MINSIZEREL builds.
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the C compiler during RELEASE builds.
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the C compiler during RELWITHDEBINFO builds.
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+
+//Libraries linked by default with all C applications.
+CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/bin/dlltool.exe
@@ -284,6 +316,19 @@ CMAKE_STRIP:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/bin/strip.exe
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to the coverage program that CTest uses for performing coverage
+// inspection
+COVERAGE_COMMAND:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/bin/gcov.exe
+
+//Extra command line flags to pass to the coverage tool
+COVERAGE_EXTRA_FLAGS:STRING=-l
+
+//How many times to retry timed-out CTest submissions.
+CTEST_SUBMIT_RETRY_COUNT:STRING=3
+
+//How long to wait between timed-out CTest submissions.
+CTEST_SUBMIT_RETRY_DELAY:STRING=5
+
 //Value Computed by CMake
 Calculator_BINARY_DIR:STATIC=D:/tool/QtWorkplace/cal/build-Calculator-Desktop_Qt_6_4_3_MinGW_64_bit-Debug
 
@@ -292,6 +337,63 @@ Calculator_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Calculator_SOURCE_DIR:STATIC=D:/tool/QtWorkplace/cal/Calculator
+
+//Maximum time allowed before CTest will kill the test.
+DART_TESTING_TIMEOUT:STRING=1500
+
+//Enable OpenMP for multithreading
+ENABLE_OPENMP:BOOL=ON
+
+//Build the samples
+ENABLE_SAMPLES:BOOL=ON
+
+//Enable wide character support
+ENABLE_WIDE_CHAR:BOOL=OFF
+
+//Command to build the project
+MAKECOMMAND:STRING=D:\tool\Qt\Tools\CMake_64\bin\cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
+
+//Path to the memory checking command, used for memory error detection.
+MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
+
+//File that contains suppressions for the memory checker
+MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
+
+//CXX compiler flags for OpenMP parallelization
+OpenMP_CXX_FLAGS:STRING=-fopenmp
+
+//CXX compiler libraries for OpenMP parallelization
+OpenMP_CXX_LIB_NAMES:STRING=gomp;mingwthrd;mingwthrd
+
+//C compiler flags for OpenMP parallelization
+OpenMP_C_FLAGS:STRING=-fopenmp
+
+//C compiler libraries for OpenMP parallelization
+OpenMP_C_LIB_NAMES:STRING=gomp;mingwthrd;mingw32;gcc;moldname;mingwex;pthread;iconv;mingwthrd;mingw32;gcc;moldname;mingwex
+
+//Path to the gcc library for OpenMP
+OpenMP_gcc_LIBRARY:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/libgcc.a
+
+//Path to the gomp library for OpenMP
+OpenMP_gomp_LIBRARY:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/libgomp.dll.a
+
+//Path to the iconv library for OpenMP
+OpenMP_iconv_LIBRARY:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libiconv.a
+
+//Path to the mingw32 library for OpenMP
+OpenMP_mingw32_LIBRARY:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingw32.a
+
+//Path to the mingwex library for OpenMP
+OpenMP_mingwex_LIBRARY:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingwex.a
+
+//Path to the mingwthrd library for OpenMP
+OpenMP_mingwthrd_LIBRARY:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingwthrd.a
+
+//Path to the moldname library for OpenMP
+OpenMP_moldname_LIBRARY:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmoldname.a
+
+//Path to the pthread library for OpenMP
+OpenMP_pthread_LIBRARY:FILEPATH=D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libpthread.dll.a
 
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
@@ -336,6 +438,9 @@ Qt6ZlibPrivate_DIR:PATH=D:/tool/Qt/6.4.3/mingw_64/lib/cmake/Qt6ZlibPrivate
 //The directory containing a CMake configuration file for Qt6.
 Qt6_DIR:PATH=D:/tool/Qt/6.4.3/mingw_64/lib/cmake/Qt6
 
+//Name of the computer/site where compile is being run
+SITE:STRING=Jays
+
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
 
@@ -350,6 +455,15 @@ Vulkan_LIBRARY:FILEPATH=Vulkan_LIBRARY-NOTFOUND
 
 //Path to a program.
 WINDEPLOYQT_EXECUTABLE:FILEPATH=D:/tool/Qt/6.4.3/mingw_64/bin/windeployqt.exe
+
+//Value Computed by CMake
+muParserProject_BINARY_DIR:STATIC=D:/tool/QtWorkplace/cal/build-Calculator-Desktop_Qt_6_4_3_MinGW_64_bit-Debug/muparser-2.3.4
+
+//Value Computed by CMake
+muParserProject_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+muParserProject_SOURCE_DIR:STATIC=D:/tool/QtWorkplace/cal/Calculator/muparser-2.3.4
 
 
 ########################
@@ -392,6 +506,24 @@ CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_STANDARD_LIBRARIES
 CMAKE_CXX_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER
+CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_AR
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS
+CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
+CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL
+CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELEASE
+CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
+CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_STANDARD_LIBRARIES
+CMAKE_C_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
@@ -524,12 +656,70 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: COVERAGE_COMMAND
+COVERAGE_COMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
+COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
+CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
+CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DART_TESTING_TIMEOUT
+DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding OpenMP
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][c ][v()]
+//Details about finding OpenMP_C
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-fopenmp][D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/libgomp.dll.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingwthrd.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingw32.a][D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/libgcc.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmoldname.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingwex.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libpthread.dll.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libiconv.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingwthrd.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingw32.a][D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/libgcc.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmoldname.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingwex.a][v()]
+//Details about finding OpenMP_CXX
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][D:/tool/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/libgomp.dll.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingwthrd.a][D:/tool/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib/libmingwthrd.a][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding WrapAtomic
 FIND_PACKAGE_MESSAGE_DETAILS_WrapAtomic:INTERNAL=[1][v()]
 //Test HAVE_STDATOMIC
 HAVE_STDATOMIC:INTERNAL=1
+//ADVANCED property for variable: MAKECOMMAND
+MAKECOMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MEMORYCHECK_COMMAND
+MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
+MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
+//Result of TRY_COMPILE
+OpenMP_COMPILE_RESULT_CXX_fopenmp:INTERNAL=TRUE
+//Result of TRY_COMPILE
+OpenMP_COMPILE_RESULT_C_fopenmp:INTERNAL=TRUE
+//ADVANCED property for variable: OpenMP_CXX_FLAGS
+OpenMP_CXX_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_CXX_LIB_NAMES
+OpenMP_CXX_LIB_NAMES-ADVANCED:INTERNAL=1
+//CXX compiler's OpenMP specification date
+OpenMP_CXX_SPEC_DATE:INTERNAL=
+//ADVANCED property for variable: OpenMP_C_FLAGS
+OpenMP_C_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_C_LIB_NAMES
+OpenMP_C_LIB_NAMES-ADVANCED:INTERNAL=1
+//C compiler's OpenMP specification date
+OpenMP_C_SPEC_DATE:INTERNAL=
+//Result of TRY_COMPILE
+OpenMP_SPECTEST_CXX_:INTERNAL=TRUE
+//Result of TRY_COMPILE
+OpenMP_SPECTEST_C_:INTERNAL=TRUE
+//ADVANCED property for variable: OpenMP_gcc_LIBRARY
+OpenMP_gcc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_gomp_LIBRARY
+OpenMP_gomp_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_iconv_LIBRARY
+OpenMP_iconv_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_mingw32_LIBRARY
+OpenMP_mingw32_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_mingwex_LIBRARY
+OpenMP_mingwex_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_mingwthrd_LIBRARY
+OpenMP_mingwthrd_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_moldname_LIBRARY
+OpenMP_moldname_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenMP_pthread_LIBRARY
+OpenMP_pthread_LIBRARY-ADVANCED:INTERNAL=1
 //Qt feature: abstractbutton (from target Qt6::Widgets)
 QT_FEATURE_abstractbutton:INTERNAL=ON
 //Qt feature: abstractslider (from target Qt6::Widgets)
@@ -1238,6 +1428,8 @@ QT_FEATURE_xmlstreamwriter:INTERNAL=ON
 QT_FEATURE_xrender:INTERNAL=OFF
 //Qt feature: zstd (from target Qt6::Core)
 QT_FEATURE_zstd:INTERNAL=OFF
+//ADVANCED property for variable: SITE
+SITE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_GLSLANG_VALIDATOR_EXECUTABLE
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_GLSLC_EXECUTABLE
