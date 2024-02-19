@@ -7,6 +7,8 @@
 #include <QFile>
 #include <QTextStream>
 #include <ctime>
+#include <chrono>
+#include <thread>
 
 using std::cout;	using std::endl;
 using std::string;  using std::cin; using std::cout;
@@ -14,7 +16,7 @@ using std::ifstream;
 
 
 const double kPi =  3.14159265358979323;
-const int k = 10;                           //作用力系数
+const double k = 0.05;                           //作用力系数
 const int MAXN = 1e7;
 int nodeNum;
 SimpleGraph graph;
@@ -32,11 +34,30 @@ double sqrNode(Node &node1,Node &node2);
 // Main method
 int main() {
     Welcome();
-
-    getGraph(":/res/5clique");
+    int runTime = 100000000;
+    getGraph(":/res/tesseract");
     InitGraphVisualizer(graph);
     DrawGraph(graph);
-    Force_directed();
+      //qDebug()<<"update success1";
+    auto startTime = std::chrono::high_resolution_clock::now();
+    auto endTime = std::chrono::high_resolution_clock::now();
+    auto elapsedTime = std::chrono::duration_cast<std::chrono::microseconds>(endTime - startTime);
+    std::chrono::microseconds dura(1000);
+    int milliseconds = elapsedTime.count();
+      //qDebug()<<"update success2";
+    while (milliseconds < runTime) {
+        Force_directed();
+
+        DrawGraph(graph);
+
+        //qDebug()<<"update success3";
+        std::this_thread::sleep_for(dura);
+        endTime = std::chrono::high_resolution_clock::now();
+        elapsedTime = std::chrono::duration_cast<std::chrono::microseconds>(endTime - startTime);
+        milliseconds = elapsedTime.count();
+    }
+
+
 
     return 0;
 }
@@ -89,14 +110,14 @@ void init_node(SimpleGraph &graph){
 void Force_directed(){
     // time_t startTime = time(NULL);
     // int count = 1e5;
-    while(true){
+    //while(true){
         std::memset(delta ,0 ,sizeof(delta));
         repulse();
         attract();
         Move();
-        DrawGraph(graph);
+       // DrawGraph(graph);
         //--count;
-    }
+    //}
 
 
     //double elapsedTime = difftime(time(NULL), startTime);
@@ -105,19 +126,20 @@ void Force_directed(){
 }
 
 void repulse(){
-    for(int i=0;i=nodeNum;i++){
+    for(int i=0;i<=nodeNum;i++){
         for(int j = i+1;j<=nodeNum;j++){
             auto node1 = graph.nodes[i];
             auto node2 = graph.nodes[j];
             double distance = sqrNode(node1,node2);
             double force = k/std::sqrt(distance);
-            double theta = std::atan2(node1.x,node2.y);
+            double theta = std::atan2(node2.y-node1.y,node2.x-node1.x);
             delta[i].first-=force*std::cos(theta);
             delta[j].first+=force*std::cos(theta);
             delta[i].second-=force*std::sin(theta);
-            delta[i].second+=force*std::sin(theta);
+            delta[j].second+=force*std::sin(theta);
 
         }
+          //qDebug()<<"update success4";
     }
 }
 
@@ -126,11 +148,13 @@ void attract(){
         auto node1 = graph.nodes[edge.start];
         auto node2 = graph.nodes[edge.end];
         double distance = sqrNode(node1,node2);
-        double force = k/std::sqrt(distance);
-        double theta = std::atan2(node1.x,node2.y);
-        delta[edge.start].first-=force*std::cos(theta);
-        delta[edge.end].first+=force*std::cos(theta);
-
+        double force = k*(distance);
+        double theta = std::atan2(node2.y-node1.y,node2.x-node1.x);
+        delta[edge.start].first+=force*std::cos(theta);
+        delta[edge.end].first-=force*std::cos(theta);
+        delta[edge.start].second += force*std::sin(theta);
+        delta[edge.end].second -= force*std::sin(theta);
+      //qDebug()<<"update success5";
     }
 }
 
