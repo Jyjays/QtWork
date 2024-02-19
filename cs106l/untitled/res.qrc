@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/2line</file>
+        <file>res/3grid</file>
+        <file>res/5clique</file>
+        <file>res/5grid</file>
+        <file>res/8wheel</file>
+        <file>res/10clique</file>
+        <file>res/10grid</file>
+        <file>res/10line</file>
+        <file>res/30clique</file>
+        <file>res/30cycle</file>
+        <file>res/31binary-tree</file>
+        <file>res/32wheel</file>
+        <file>res/50line</file>
+        <file>res/60cycle</file>
+        <file>res/63binary-tree</file>
+        <file>res/64wheel</file>
+        <file>res/127binary-tree</file>
+        <file>res/bull</file>
+        <file>res/cube</file>
+        <file>res/desargues</file>
+        <file>res/dodecahedron</file>
+        <file>res/doodad-1</file>
+        <file>res/doodad-2</file>
+        <file>res/doodad-3</file>
+        <file>res/durer</file>
+        <file>res/heawood</file>
+        <file>res/icosahedron</file>
+        <file>res/mobius-kantor</file>
+        <file>res/moser-spindle</file>
+        <file>res/octahedron</file>
+        <file>res/petersen</file>
+        <file>res/star</file>
+        <file>res/tesseract</file>
+        <file>res/tietze</file>
+        <file>res/triangle</file>
+    </qresource>
+</RCC>
